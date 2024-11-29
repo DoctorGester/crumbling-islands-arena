@@ -976,7 +976,7 @@ function GameMode:OnRoundEnd(round)
 
     -- Setting up end-camera
     round:Destroy()
-    DoEntFire("round_end_layer_entity", "ShowWorldLayerAndSpawnEntities", "", 0.0, nil, nil)
+    -- DoEntFire("round_end_layer_entity", "ShowWorldLayerAndSpawnEntities", "", 0.0, nil, nil)
     self.level:Hide()
 
     local positions = {
@@ -1052,7 +1052,7 @@ function GameMode:OnRoundEnd(round)
             hero:GetUnit():RemoveSelf()
         end
 
-        DoEntFire("round_end_layer_entity", "HideWorldLayerAndDestroyEntities", "", 0.0, nil, nil)
+        -- DoEntFire("round_end_layer_entity", "HideWorldLayerAndDestroyEntities", "", 0.0, nil, nil)
         self.level:Show()
 
         self.round = nil
